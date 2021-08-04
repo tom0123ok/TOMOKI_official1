@@ -1,0 +1,787 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+} 
+body {
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 116px;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #7acbe1;
+  padding: 50px 0;
+  z-index: 99;
+}
+.header ul {
+  display: flex;
+  justify-content: center;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.header li {
+  list-style: none;
+}
+.header li + li {
+  margin-left: 70px;
+}
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.header a:hover {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ffffff;
+}
+#wrapper_1 h1 {
+  width: 100%;
+  z-index: -1;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 250px 0 366px 0;
+}  
+   @keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #7acbe1;
+  z-index: -1;
+}
+#service {
+  background-color: #009bc6;
+  width: 90%;
+  margin: 0 auto 160px auto;
+  border-radius: 50px;
+  padding-bottom: 120px; /* px指定!!!!! */
+}
+#service h2 {
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  z-index: -1;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1.0rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 100px 0; /* px指定!!!!! */
+}
+.bords {
+  display: flex;
+  justify-content: center;
+}
+#service .service_bord {
+  background-color: #009bc6;
+  text-align: center;
+  width: 400px;  /* px指定!!!!! */
+}
+#service .service_bord + .service_bord {
+  margin-left: 120px;
+}
+#service .service_bord h3 {
+  font-size: 25px;
+  letter-spacing: 0.6rem;
+  padding: 0 0  50px 0;  /* px指定!!!!! */
+}
+#service .service_bord img {
+  width: 100%;
+}
+#service .service_bord p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0 100px 0; /* px指定!!!!! */
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+  line-height: 2.2rem;
+}
+.alert {
+  text-align: center;
+}
+.alert p {
+  line-height: 2rem;
+}
+#skill {
+  background-color: #99cc65;
+  width: 90%;
+  margin: 0 auto 160px auto;
+  border-radius: 50px;
+  padding-bottom: 120px; /* px指定!!!!! */
+}
+#skill h2 {
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  z-index: -1;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1.0rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 100px 0; /* px指定!!!!! */
+}
+#skill .bords {
+  display: block;
+}
+.accordion-area{
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin:0 auto;
+  margin-bottom: 100px;
+}
+.accordion-area li{
+  margin: 25px 0;
+}
+
+.accordion-area section {
+border: 1px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.title {
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+}
+
+#skill .accordion-area p {
+  line-height: 3rem;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+  position: absolute;
+  content:'';
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+  
+}
+.title::before{
+  top:48%;
+  left: 15px;
+  transform: rotate(0deg);
+  
+}
+.title::after{    
+  top:48%;
+  left: 15px;
+  transform: rotate(90deg);
+
+}
+/* closeというクラスがついたら形状変化 */
+.title.close::before{
+transform: rotate(45deg);
+}
+
+.title.close::after{
+transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;/*はじめは非表示*/
+  background: #99cc65; 
+  margin:0 3% 3% 3%;
+  padding: 3%;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+#myself {
+  width: 90%;
+  background-color: #ffffff;
+  margin: 0 auto 160px auto;
+  border-radius: 50px;
+  padding-bottom: 120px; /* px指定!!!!! */
+  color: #009bc6;
+}
+#myself h2 {
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  z-index: -1;
+  font-size: 40px;
+  letter-spacing: 1.0rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 100px 0; /* px指定!!!!! */
+}
+#myself .image {
+  width: 30%;  /* px指定!!!!! */
+  margin: 50px 0 0 50px;
+}
+#myself img {
+  width: 300px;  /* px指定!!!!! */
+  border-radius: 50%;
+  height: 300px;
+}
+#myself .myself_bord {
+  width: 60%;
+}
+#history {
+  width: 90%;
+  background-color: #ffffff;
+  margin: 0 auto 160px auto;
+  border-radius: 50px;
+  padding-bottom: 120px; /* px指定!!!!! */
+  color: #009bc6;
+}
+#history h2 {
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  z-index: -1;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1.0rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 100px 0; /* px指定!!!!! */
+}
+#history .image {
+  width: 40%;  /* px指定!!!!! */
+  margin: 150px 0 0 50px; 
+}
+#history img {
+  width: 100%;  /* px指定!!!!! */border-radius: 50px;
+}
+#history .bords {
+  display: flex;
+  justify-content: center;
+}
+#history .history_bord {
+  width: 60%;
+}
+/*.myself_bord アコーディオンで現れるエリア*/
+#myself .box {
+  background: #ffffff; 
+}
+#myself .accordion-area p {
+  line-height: 3rem; 
+}
+#history .history_bord p {
+  margin: 0 100px ;
+  padding: 30px 0;
+  border-bottom: 1px solid #333333;
+  text-align: left;
+  line-height: 2rem;
+}
+/*#history .history_bord p span {
+  margin-left: 30px;
+}*/
+
+#experience {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 0 auto 160px auto;
+  border-radius: 50px;
+  padding-bottom: 120px; /* px指定!!!!! */
+  color: #009bc6;
+}
+#experience h2 {
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  z-index: -1;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1.0rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 100px 0; /* px指定!!!!! */
+}
+#experience .bords {
+  display: block;
+}
+#experience .box {
+  display: none;/*はじめは非表示*/
+  background: #ffffff; 
+  margin:0 3% 3% 3%;
+  padding: 3%;
+}
+#experience .accordion-area p {
+  line-height: 3rem;
+}
+
+#contact {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 0 auto 160px auto;
+  border-radius: 50px;
+  padding-bottom: 120px; /* px指定!!!!! */
+  color: #009bc6;
+}
+#contact h2 {
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  z-index: -1;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1.0rem;
+  animation-name:fadeInAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  padding: 100px 0; /* px指定!!!!! */
+}
+#contact .contact_bord {
+  background-color: #ffffff;
+  text-align: center;
+  width: 300px;  /* px指定!!!!! */
+}
+#contact .contact_bord + .contact_bord {
+  margin-left: 80px;  /* px指定!!!!! */
+}
+#contact .contact_bord h3 {
+  font-size: 25px;
+  letter-spacing: 0.6rem;
+  padding: 0 0  100px 0;  /* px指定!!!!! */
+}
+#contact .contact_bord img {
+  width: 50px;
+}
+#contact .contact_bord p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0 100px 0; /* px指定!!!!! */
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+  line-height: 2.2rem;
+}
+#contact .contact_bord .twitter_h3 {
+  padding: 0 0 110px 0;
+}
+#contact .contact_bord .twitter_p{
+  padding: 42px 0 100px 0; /* px指定!!!!! */
+}
+.footer h4 {
+  text-align: center;
+  background-color: #009bc6;
+  padding: 10px 0;
+}
+.sp_only {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #history .image {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #history .history_bord {
+    width: 90%;
+    margin: 0 auto;
+}
+#history .history_bord p {
+  margin: 0 10%;
+  padding: 30px 0;
+}
+  #history .bords {
+    display: block;
+  }
+}
+@media (max-width: 1100px) {
+  #service .service_bord + .service_bord {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 894px) {
+  #wrapper_1 h1 {
+    line-height: 7rem;
+  }
+  #contact .contact_bord + .contact_bord {
+    margin-left: 10px;
+  }
+    
+}
+@media (max-width: 737px) {
+  .header li + li {
+    margin-left: 7%;
+  }
+}
+@media (max-width: 541px) {
+  .header ul {
+    padding: 0 10px;
+  }
+  .header li + li {
+    margin-left: auto;
+  }
+  #wrapper_1 h1 {
+    font-size: 40px;
+    letter-spacing: 1.0rem;
+  }
+  .bords {
+    display: block;
+    margin: 0 auto;
+  } 
+  #service .service_bord {
+    background-color: #009bc6;
+    text-align: center;
+    width:70%;
+    margin: 0 auto;
+  }
+  #service .service_bord + .service_bord {
+    margin-left: auto;
+  }
+  #myself .image {
+    width: auto;
+    margin: auto;
+    text-align: center;
+  }
+  #myself .myself_bord {
+    width: auto;
+    }
+
+}
+@media (max-width: 411px) {
+  body {
+    padding-top: 0;
+  }
+  .header {
+    position: fixed;
+    z-index: -1;
+  }
+  .header .header_fixed {
+    display: none;
+  }
+  #contact .contact_bord + .contact_bord {
+    margin: auto;
+  }
+  #contact .contact_bord {
+    width: auto;
+  }
+  .sp_only {
+    display: block;
+  }
+  /*========= ナビゲーションのためのCSS ===============*/
+
+/*アクティブになったエリア*/
+#g-nav.panelactive{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 999;
+top: 0;
+width:100%;
+  height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg{
+  position: fixed;
+z-index:3;
+  /*丸の形*/
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #999;
+  /*丸のスタート位置と形状*/
+transform: scale(0);/*scaleをはじめは0に*/
+  top:calc(50% - 50px);/*50%から円の半径を引いた値*/
+  left:calc(50% - 50px);/*50%から円の半径を引いた値*/
+  transition: all .6s;/*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive{
+transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav-list{
+  display: none;/*はじめは表示なし*/
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#g-nav.panelactive #g-nav-list{
+   display: block; /*クラスが付与されたら出現*/
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+opacity: 0;/*はじめは透過0*/
+  /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+  opacity:1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+#g-nav.panelactive ul li{
+animation-name:gnaviAnime;
+animation-duration:1s;
+animation-delay:.2s;/*0.2 秒遅らせて出現*/
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+/*リストのレイアウト設定*/
+#g-nav li{
+text-align: center; 
+list-style: none;
+}
+
+#g-nav li a{
+color: #333;
+text-decoration: none;
+padding:10px;
+display: block;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+font-weight: bold;
+}
+
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+position:fixed;
+top:10px;
+right: 10px;
+z-index: 9999;/*ボタンを最前面に*/
+cursor: pointer;
+  width: 50px;
+  height:50px;
+}
+
+/*×に変化*/	
+.openbtn span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+background-color: #666;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+}
+@media (max-width: 375px) {
+  #wrapper_1 h1 {
+    font-size: 35px;
+    letter-spacing: 0.8rem;
+  }
+  #myself img {
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+  }
+  #service h2 {
+    font-size: 30px;
+  }
+  #service .service_bord h3 {
+    font-size: 24px;
+    letter-spacing: 0.6rem;
+    padding: 0 0 50px 0;
+}
+  #skill h2 {
+    font-size: 30px;
+  }
+  #myself h2 {
+    font-size: 30px;
+  }
+  #history h2 {
+    font-size: 30px;
+  }
+  #history .image {
+    width: 90%;
+  }
+  #experience h2 {
+    font-size: 30px;
+  }
+  #contact .contact_bord {
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+  #contact .contact_bord + .contact_bord {
+    margin: auto;
+  }
+    
+}
